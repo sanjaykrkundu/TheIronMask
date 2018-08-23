@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>TheIronMask</title>
+    <link rel="icon" href="./assets/img/logo.ico">
+
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Aref+Ruqaa" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Delius+Unicase" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./assets/css/style.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./assets/js/script.js"></script>
+</head>
+
+<body>
+
+  <header>
+    <a href="#home"><h2 class="logo"><img src="./assets/img/logo.svg" height="40">The<font color="#ff0000">Iron</font>Mask<img src="./assets/img/logo.svg" height="40"></h2></a>
+    <nav>
+      <a href="#work"><li>Work</li></a>
+      <a href="#about"><li>About</li></a>
+      <a href="#contact"><li>Contact</li></a>
+    </nav>
+  </header>
+
+  <main>
+
+  	<section class="has-background" id="home">
+  		<div class="background-image" style="background-image: url(assets/img/bg.jpg);"></div>
+
+  		<div class="slider-master">
+  			<div class="items">
+  				<div class="blockquote slider-item" id="slider-item1">
+					<h2 class="quote">Photography is the story I fail to put into words.</h2>
+					<h3 class="author">- Destin Sparks</h3>
+				</div>
+				 <div class="blockquote slider-item" id="slider-item2">
+					<h2 class="quote">We are making photographs to understand what our lives mean to us.</h2>
+					<h3 class="author">- Ralph Hattersley</h3>
+				</div>
+				<div class="blockquote slider-item" id="slider-item3">
+					<h2 class="quote">Taking an image, freezing a moment, reveals how rich reality truly is.</h2>
+					<h3 class="author">- Anonymous</h3>
+				</div>
+			</div>
+		</div>
+  	</section>	
+
+  	<section id="status">
+		<div class="status">
+			<div>
+				<img src="./assets/img/camera.png" class="img-thumbnail"><br>
+				<h2 id="instaPosts"></h2>
+			</div>
+			<div>
+				<img src="./assets/img/like.png" class="img-thumbnail"><br>
+				<h2 id="instaLikes"></h2>
+			</div>
+			<div>
+				<img src="./assets/img/follower.png" class="img-thumbnail"><br>
+				<h2 id="instaFollowers"></h2>
+			</div>			
+		</div>
+	</section>
+
+	<section id="work">
+		<h3 class="title">Work</h3>
+		<hr>
+
+		<ul id="instafeed" class="grid grid-5c">
+		</ul>
+	</section>
+	
+	<section id="about">
+		<h3 class="title">About</h3>	
+		<hr>
+		<div>
+		    <b id="me">
+              <p>A SLOW LEARNER</p>
+                <!-- <p>I BeLieVe in more</p>
+                <p>more THan THe eYe can see</p>
+                <p>more THan THe WorDs THaT are SaiD</p>
+                <p>more THan a First imPressIon</p>
+                <p>more THan a FLeeTing FeeLing</p>
+                <p>I BeLieVe in emBracing LiFe</p>
+                <p>not Only For WHaT iT iS</p>
+                <p>BuT For wHat iT Can Be</p>
+                <p>anD For wHaT iT Once Was</p>
+                <p>I BeLieVe in me anD I BeLieVe in You</p> -->
+            </b>
+        </div>
+	</section>
+
+	
+	<section id="contact">
+      <h3 class="title">Contact</h3>
+      <hr>
+
+      <ul class="grid">
+        <center>
+         	<b>
+           	<p><a href="mailto:say.bis12@gmail.com">say.bis12@gmail.com</a>
+           	<p><a href="tel:+91-8777266768">+91-8777266768</a> , <a href="tel:+91-7259233619">+91-7259233619</a></p>
+           </b>
+	       	<a href="https://www.instagram.com/the_iron_mask/"><img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjMycHgiIGhlaWdodD0iMzJweCI+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTM3My42NTksMEgxMzguMzQxQzYyLjA2LDAsMCw2Mi4wNiwwLDEzOC4zNDF2MjM1LjMxOEMwLDQ0OS45NCw2Mi4wNiw1MTIsMTM4LjM0MSw1MTJoMjM1LjMxOCAgICBDNDQ5Ljk0LDUxMiw1MTIsNDQ5Ljk0LDUxMiwzNzMuNjU5VjEzOC4zNDFDNTEyLDYyLjA2LDQ0OS45NCwwLDM3My42NTksMHogTTQ3MC42MzYsMzczLjY1OSAgICBjMCw1My40NzMtNDMuNTAzLDk2Ljk3Ny05Ni45NzcsOTYuOTc3SDEzOC4zNDFjLTUzLjQ3MywwLTk2Ljk3Ny00My41MDMtOTYuOTc3LTk2Ljk3N1YxMzguMzQxICAgIGMwLTUzLjQ3Myw0My41MDMtOTYuOTc3LDk2Ljk3Ny05Ni45NzdoMjM1LjMxOGM1My40NzMsMCw5Ni45NzcsNDMuNTAzLDk2Ljk3Nyw5Ni45NzdWMzczLjY1OXoiIGZpbGw9IiMwMDAwMDAiLz4KCTwvZz4KPC9nPgo8Zz4KCTxnPgoJCTxwYXRoIGQ9Ik0zNzAuNTg2LDIzOC4xNDFjLTMuNjQtMjQuNTQ3LTE0LjgzOS00Ni43OTUtMzIuMzg2LTY0LjM0MmMtMTcuNTQ3LTE3LjU0Ni0zOS43OTUtMjguNzQ2LTY0LjM0MS0zMi4zODUgICAgYy0xMS4xNzYtMS42NTctMjIuNTA3LTEuNjU3LTMzLjY4MiwwYy0zMC4zMzYsNC40OTktNTcuMTAzLDIwLjU0MS03NS4zNzIsNDUuMTcyYy0xOC4yNjksMjQuNjMxLTI1Ljg1NCw1NC45MDMtMjEuMzU1LDg1LjIzNyAgICBjNC40OTksMzAuMzM1LDIwLjU0MSw1Ny4xMDIsNDUuMTcyLDc1LjM3MmMxOS45OTYsMTQuODMxLDQzLjcwNiwyMi42MTksNjguMTUzLDIyLjYxOWM1LjY2NywwLDExLjM3NS0wLjQxOCwxNy4wODMtMS4yNjUgICAgYzMwLjMzNi00LjQ5OSw1Ny4xMDMtMjAuNTQxLDc1LjM3Mi00NS4xNzJDMzY3LjUsMjk4Ljc0NywzNzUuMDg1LDI2OC40NzYsMzcwLjU4NiwyMzguMTQxeiBNMjY3Ljc5MSwzMjcuNjMyICAgIGMtMTkuNDA1LDIuODgyLTM4Ljc3LTEuOTczLTU0LjUyNy0xMy42NmMtMTUuNzU3LTExLjY4Ny0yNi4wMTktMjguODExLTI4Ljg5Ni00OC4yMTZjLTIuODc4LTE5LjQwNSwxLjk3My0zOC43NywxMy42Ni01NC41MjcgICAgYzExLjY4OC0xNS43NTcsMjguODExLTI2LjAxOSw0OC4yMTctMjguODk3YzMuNTc0LTAuNTMsNy4xNzMtMC43OTUsMTAuNzcyLTAuNzk1czcuMTk5LDAuMjY1LDEwLjc3MywwLjc5NiAgICBjMzIuMjMxLDQuNzc5LDU3LjA5OCwyOS42NDUsNjEuODc4LDYxLjg3N0MzMzUuNjA4LDI4NC4yNjgsMzA3Ljg1MSwzMjEuNjkyLDI2Ny43OTEsMzI3LjYzMnoiIGZpbGw9IiMwMDAwMDAiLz4KCTwvZz4KPC9nPgo8Zz4KCTxnPgoJCTxwYXRoIGQ9Ik00MDAuMDQ5LDExMS45NTFjLTMuODUyLTMuODUxLTkuMTgzLTYuMDU4LTE0LjYyNS02LjA1OGMtNS40NDIsMC0xMC43NzMsMi4yMDYtMTQuNjI1LDYuMDU4ICAgIGMtMy44NTEsMy44NTItNi4wNTgsOS4xNzQtNi4wNTgsMTQuNjI1YzAsNS40NTEsMi4yMDcsMTAuNzczLDYuMDU4LDE0LjYyNWMzLjg1MiwzLjg1MSw5LjE4Myw2LjA1OCwxNC42MjUsNi4wNTggICAgYzUuNDQyLDAsMTAuNzczLTIuMjA2LDE0LjYyNS02LjA1OGMzLjg1MS0zLjg1Miw2LjA1OC05LjE4Myw2LjA1OC0xNC42MjVDNDA2LjEwNywxMjEuMTMzLDQwMy45LDExNS44MDIsNDAwLjA0OSwxMTEuOTUxeiIgZmlsbD0iIzAwMDAwMCIvPgoJPC9nPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=" /></a>
+
+	       	<a href="https://500px.com/saybis12"><img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDEwNi45MDEgMTA2LjkwMSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMTA2LjkwMSAxMDYuOTAxOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjMycHgiIGhlaWdodD0iMzJweCI+CjxnIGlkPSJYTUxJRF80Ml8iPgoJPHBhdGggaWQ9IlhNTElEXzc0XyIgZD0iTTU4Ljc2Nyw5NC42NTJjMTkuNTQ1LDAsMzUuNDQ2LTE1LjkwMSwzNS40NDYtMzUuNDQ2Uzc4LjMxMiwyMy43Niw1OC43NjcsMjMuNzYgICBjLTkuNzUxLDAtMTguOTAyLDMuOTkzLTI1LjQ5MiwxMC44MTFWNmg0OC43NTdjMS42NTcsMCwzLTEuMzQzLDMtM3MtMS4zNDMtMy0zLTNIMzAuMjc1Yy0xLjY1NywwLTMsMS4zNDMtMywzdjM5Ljg2N2wtMC4wMzUsMC43MzEgICBjLTAuMDY1LDEuMzk3LDAuODQzLDIuNjU1LDIuMTg5LDMuMDMxYzEuMzUxLDAuMzc3LDIuNzc2LTAuMjI5LDMuNDQzLTEuNDU3YzUuMTY1LTkuNTA3LDE1LjA4Ny0xNS40MTMsMjUuODk1LTE1LjQxMyAgIGMxNi4yMzYsMCwyOS40NDYsMTMuMjA5LDI5LjQ0NiwyOS40NDZzLTEzLjIxLDI5LjQ0Ni0yOS40NDYsMjkuNDQ2Yy01LjQ1OSwwLTEwLjY0My0xLjUzNi0xNS4xMDktNC4yMTNWNTkuMjA2ICAgYzAtOC4zMzIsNi43NzgtMTUuMTEsMTUuMTA5LTE1LjExczE1LjEwOSw2Ljc3OCwxNS4xMDksMTUuMTFzLTYuNzc4LDE1LjExLTE1LjEwOSwxNS4xMWMtMi4wMTcsMC0zLjk3NC0wLjM5LTUuODE3LTEuMTYgICBjLTEuNTIzLTAuNjM4LTMuMjg1LDAuMDgzLTMuOTI0LDEuNjEzYy0wLjYzOCwxLjUyOSwwLjA4NCwzLjI4NiwxLjYxMywzLjkyNGMyLjU3OSwxLjA3Nyw1LjMxMywxLjYyMyw4LjEyOCwxLjYyMyAgIGMxMS42NCwwLDIxLjEwOS05LjQ3LDIxLjEwOS0yMS4xMXMtOS40Ny0yMS4xMS0yMS4xMDktMjEuMTFzLTIxLjEwOSw5LjQ3LTIxLjEwOSwyMS4xMXYyMC41MDIgICBjLTMuMzc4LTMuNDY2LTUuOTM1LTcuNzc1LTcuMjgxLTEyLjY1OGMtMC40NC0xLjU5Ny0yLjA5MS0yLjUzNi0zLjY4OS0yLjA5NWMtMS41OTgsMC40NC0yLjUzNSwyLjA5Mi0yLjA5NiwzLjY4OSAgIEMyOC44MTMsODMuOTU4LDQyLjg2NSw5NC42NTIsNTguNzY3LDk0LjY1MnoiIGZpbGw9IiMwMDAwMDAiLz4KCTxwYXRoIGlkPSJYTUxJRF83NV8iIGQ9Ik00MC43MzksMTUuMTU3Yy0xLjUxNCwwLjY3Mi0yLjE5NiwyLjQ0NS0xLjUyNCwzLjk1OWMwLjY3MiwxLjUxMywyLjQ0MywyLjE5OCwzLjk2LDEuNTI0ICAgYzkuNDAyLTQuMTc1LDI3Ljg3Ny04LjUzNyw0NS45MzcsOS4xNzNjMC41ODQsMC41NzMsMS4zNDMsMC44NTgsMi4xMDEsMC44NThjMC43NzcsMCwxLjU1NS0wLjMsMi4xNDItMC44OTkgICBjMS4xNi0xLjE4MywxLjE0Mi0zLjA4My0wLjA0MS00LjI0M0M3MS45NTMsNC41ODMsNDkuNDMsMTEuMjk3LDQwLjczOSwxNS4xNTd6IiBmaWxsPSIjMDAwMDAwIi8+Cgk8cGF0aCBpZD0iWE1MSURfNzZfIiBkPSJNOTQuMzc5LDg2LjI5OWMtMS4yNTEtMS4wODYtMy4xNDYtMC45NTUtNC4yMzIsMC4yOTZjLTcuOTA1LDkuMDkyLTE5LjM0MywxNC4zMDctMzEuMzgsMTQuMzA3ICAgYy0yMS4xNDcsMC0zOC45LTE1LjgxOS00MS4yOTUtMzYuNzk3Yy0wLjE4OC0xLjY0Ni0xLjY3OC0yLjgzMi0zLjMyLTIuNjRjLTEuNjQ2LDAuMTg4LTIuODI5LDEuNjc0LTIuNjQxLDMuMzIxICAgYzIuNzQsMjQuMDEsMjMuMDU2LDQyLjExNyw0Ny4yNTYsNDIuMTE3YzEzLjc3NCwwLDI2Ljg2Mi01Ljk2NywzNS45MDctMTYuMzdDOTUuNzYxLDg5LjI4MSw5NS42MjksODcuMzg2LDk0LjM3OSw4Ni4yOTl6IiBmaWxsPSIjMDAwMDAwIi8+Cgk8cGF0aCBpZD0iWE1MSURfNzdfIiBkPSJNNTEuMTMzLDY2LjQ3OWMwLjU4NywwLjU5NSwxLjM2MSwwLjg5NCwyLjEzNiwwLjg5NGMwLjc2MSwwLDEuNTIyLTAuMjg4LDIuMTA2LTAuODY0bDMuMDgxLTMuMDM4ICAgbDMuMDM4LDMuMDhjMC41ODcsMC41OTUsMS4zNjEsMC44OTQsMi4xMzYsMC44OTRjMC43NjEsMCwxLjUyMi0wLjI4OCwyLjEwNi0wLjg2NGMxLjE4LTEuMTY0LDEuMTkzLTMuMDYzLDAuMDI5LTQuMjQzbC0zLjAzNy0zLjA4ICAgbDIuOTY5LTIuOTI3YzEuMTgtMS4xNjQsMS4xOTMtMy4wNjMsMC4wMjktNC4yNDNjLTEuMTY0LTEuMTgtMy4wNjQtMS4xOTMtNC4yNDItMC4wM2wtMi45NjksMi45MjhsLTIuOTI4LTIuOTY5ICAgYy0xLjE2NC0xLjE4LTMuMDY0LTEuMTkzLTQuMjQyLTAuMDNjLTEuMTgsMS4xNjQtMS4xOTMsMy4wNjMtMC4wMjksNC4yNDNsMi45MjcsMi45NjhsLTMuMDgsMy4wMzggICBDNDkuOTgzLDYzLjQsNDkuOTY5LDY1LjI5OSw1MS4xMzMsNjYuNDc5eiIgZmlsbD0iIzAwMDAwMCIvPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=" /></a>
+
+          </center>
+      </ul>
+    </section>
+	
+    
+  </main>
+
+	 <footer>
+		<h2 style="margin-bottom: 10px"><img src="./assets/img/logow.svg" height="40">TheIronMask<img src="./assets/img/logow.svg" height="40"></h2>
+		<p>&copy; <data id="date"></data> theironmask.click</p><p>All rights reserved.</p><p>design by <a href="https://sanjaykrkundu.github.io/">Sanjay Kundu</a></p>
+	  </footer>
+  
+
+ <div class="modal" id="modal">
+      <div class="gallery">
+        <div class="previous" id="previous"><h1>«</h1></div>
+        <div class="image" >
+          <span class="loader"></span>
+          <img id="imgContainer">
+        <div id="caption" style="padding:10px;"></div>
+        </div>
+        <div class="next" id="next"><h1>»</h1></div>
+      </div>
+      <div class="close" id="close"><h1>&times;</h1></div>
+  </div>
+
+</body>
+
+</html>
