@@ -17,7 +17,18 @@ $(document).ready(function(){
 		setModalHandlers();
 
 	});
+	/*sliderAnimation*/
+
+	var slidCounter = 0;
+	var totalSlide = $(".slider").children().length;
 	
+	function sliderAnimation(){
+		slidCounter=(slidCounter+1)%totalSlide;
+		$(".slider").children().removeClass("show");
+		$(".slider").children().eq(slidCounter).addClass("show");
+	}
+
+	setInterval(sliderAnimation, 10000);
 
 	/*
 		Link Scrolling Effect;
@@ -46,7 +57,7 @@ $(document).ready(function(){
 $(window).on("load", function (e) {
 	//Remove 000webhost banner
 	$("a[title='000webhost logo']").parent().remove();
-})
+});
 
 
 $(window).keydown(function(e){
