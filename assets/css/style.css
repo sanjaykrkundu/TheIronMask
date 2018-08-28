@@ -332,20 +332,33 @@ body::-webkit-scrollbar-thumb {
 
 .typewriter h1,.typewriter h2{
 	overflow: hidden;
-	border-right: .15em solid orange;
-	white-space: nowrap;
 	margin: 0 auto;
-	animation: 
-		typing 10s steps(40,end),
-		blink-caret .75s step-end infinite;
+	animation: fadding 10s;
 	animation-fill-mode: forwards;
 }
 
 
+@media(min-width: 1200px){
+	.typewriter h1,.typewriter h2{
+		border-right: .15em solid orange;
+		white-space: nowrap;
+		animation: 
+			typing 10s steps(40,end),
+			blink-caret .75s step-end infinite;
+		
+	}
+}
+
+@keyframes fadding {
+  from,to {opacity: 0}
+  25%,75% {opacity: 1}
+  5%,95%{opacity: 0}
+}
+
 @keyframes typing {
   from,to {width: 0}
   25%,75% {width: 100%}
-  5%,95%{width: 0}
+  3%{width: 0}
 }
 
 @keyframes blink-caret {
