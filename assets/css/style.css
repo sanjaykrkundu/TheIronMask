@@ -7,6 +7,7 @@
 html{
 	font: normal 16px sans-serif;
 	color: #555;
+	min-width: 300px;
 }
 
 a{
@@ -183,7 +184,6 @@ header h2.logo{
 	color: #fff;
 }
 
-
 @media (max-width: 800px){
 	.has-background{
 		min-height: 400px;
@@ -317,13 +317,17 @@ body::-webkit-scrollbar-thumb {
 	display:flex;
 	justify-content: center;
 	align-items: center;
-	height: 20vh;
 	max-width: 100%;
+	min-width: 300px;
+	padding-top: 10vh;
+	padding-bottom: 10vh;
+
 }
 
 .slider > *{
 	display: none;
 	width: 100%;
+	
 }
 .show{
 	display: block;
@@ -331,7 +335,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 .typewriter h1,.typewriter h2{
-	overflow: hidden;
 	margin: 0 auto;
 	animation: fadding 10s;
 	animation-fill-mode: forwards;
@@ -340,6 +343,7 @@ body::-webkit-scrollbar-thumb {
 
 @media(min-width: 1200px){
 	.typewriter h1,.typewriter h2{
+		overflow: hidden;
 		border-right: .15em solid orange;
 		white-space: nowrap;
 		animation: 
