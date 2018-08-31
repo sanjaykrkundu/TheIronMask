@@ -7,6 +7,7 @@ $(document).ready(function(){
 	$("#date").text(new Date().getYear()+1900);
 
 	/*	get insta user data */
+	
 	var access_token = '331900299.e9d07d0.be5178085dc44ea19d80f13d6e329739';
 	var imageDataURL = "https://api.instagram.com/v1/users/self/media/recent/?access_token="+access_token;
 	var userDataURL = "https://api.instagram.com/v1/users/self/?access_token="+access_token;
@@ -173,4 +174,4 @@ function convertToCustomData(rawData){
 }
 
 
-function removeTags(str) {return str.replace(/#.*/g,"").replace(/(-\n)*/g,"").trim();}
+function removeTags(str) {return str.replace(/#.*/g,"").replace(/\n*/g,"").trim();}
